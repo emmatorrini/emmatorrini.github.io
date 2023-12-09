@@ -13,49 +13,119 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
     <!--Navigation bar-->
     <header>
-        <li id="name"><a href="#"><h2><strong>Emma Torrini</strong></h2></a></li>
+        <li id="name"><a href="#headshot" onclick=hideSidebar()><h2><strong>Emma Torrini</strong></h2></a></li>
         <nav>
             <!--Vertical navbar (smaller screens)-->
             <ul class="side-bar">
                 <li onclick=hideSidebar()><a href="#"><i class="fa fa-remove"></i></a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Publications</a></li>
-                <li><a href="#">Hobbies</a></li>
-                <li><a href="#">CV</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#experience" onclick=hideSidebar()>Experience</a></li>
+                <li><a href="#education" onclick=hideSidebar()>Education</a></li>
+                <li><a href="#projects" onclick=hideSidebar()>Projects</a></li>
+                <li><a href="#publications" onclick=hideSidebar()>Publications</a></li>
+                <li><a href="#hobbies" onclick=hideSidebar()>Hobbies</a></li>
+                <li><a href="#" onclick=hideSidebar()>CV</a></li>
+                <li><a href="#" onclick=hideSidebar()>Contact</a></li>
             </ul>
             <!--Horizontal navbar (wider screens)-->
             <ul>
-                <li class="hide-on-mobile"><a href="#">Experience</a></li>
-                <li class="hide-on-mobile"><a href="#">Education</a></li>
-                <li class="hide-on-mobile"><a href="#">Projects</a></li>
-                <li class="hide-on-mobile"><a href="#">Publications</a></li>
-                <li class="hide-on-mobile"><a href="#">Hobbies</a></li>
+                <li class="hide-on-mobile"><a href="#experience">Experience</a></li>
+                <li class="hide-on-mobile"><a href="#education">Education</a></li>
+                <li class="hide-on-mobile"><a href="#projects">Projects</a></li>
+                <li class="hide-on-mobile"><a href="#publications">Publications</a></li>
+                <li class="hide-on-mobile"><a href="#hobbies">Hobbies</a></li>
                 <li class="hide-on-mobile"><a href="#">CV</a></li>
                 <li class="hide-on-mobile"><a href="#">Contact</a></li>
                 <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa fa-navicon"></i></a></li>
             </ul>
         </nav>
     </header>
-    <div class="two-col">
-        <!--Photo (to add contacts see: notion > phd > projects > personal website > icons)-->
-        <div class="left-col">
-            <img id="headshot"
-                 src="headshot-outline.png" alt="Image">
-        </div>
+
+    <div>
         <!--Presentation-->
-        <div class="white-box" class="right-col">
-            <p id="my-title"><strong>PhD candidate in Statistics</strong> 
-                             <i class="fa fa-graduation-cap"></i>
-            </p>
-            <p id="who-am-i">
-                I am Emma, a first year PhD candidate in Statistics at the <em>University of Florence</em>. 
-                My research focuses on Causal Inference methods for Biostatistics and Drug Development, and is supported by <em>Daiichi Sankyo Europe GmbH</em>. 
-            </p>
+        <div class="presentation">
+            <!--Photo (to add contacts see: notion > phd > projects > personal website > icons)-->
+            <div>
+                <img id="headshot" class="anchor"
+                     src="images/headshot-outline.png" alt="Image">
+            </div>
+            <!--Presentation-->
+            <div id="pres-box">
+                <p id="my-title"><strong>PhD candidate in Statistics</strong> 
+                                 <i class="fa fa-graduation-cap"></i>
+                </p>
+                <p id="who-am-i">
+                    I am Emma, a first year PhD candidate in Statistics at the <em>University of Florence</em>. 
+                    My research focuses on Causal Inference methods for Biostatistics and Drug Development, and is supported by <em>Daiichi Sankyo Europe GmbH</em>. 
+                </p>
+            </div>
+        </div>
+
+        <!--Experience-->
+        <div class="two-col anchor" id="experience">
+            <div>
+                <h2>Experience</h2>
+            </div>
+            <div class="white-box">
+                Experience 1
+            </div>
+            <div class="white-box">
+                Experience 2
+            </div>
+        </div>
+
+        <!--Education-->
+        <div class="two-col following-sect anchor" id="education">
+            <div>
+                <h2>Education</h2>
+            </div>
+            <div class="white-box">
+                Education 1
+            </div>
+            <div class="white-box">
+                Education 2
+            </div>
+        </div>
+
+        <!--Projects-->
+        <div class="two-col following-sect anchor" id="projects">
+            <div>
+                <h2>Projects</h2>
+            </div>
+            <div class="white-box">
+                Projects 1
+            </div>
+            <div class="white-box">
+                Projects 2
+            </div>
+        </div>
+    
+        <!--Publications-->
+        <div class="two-col following-sect anchor" id="publications">
+            <div>
+                <h2>Publications</h2>
+            </div>
+            <div class="white-box">
+                Publication 1
+            </div>
+            <div class="white-box">
+                Publication 2
+            </div>
+        </div>
+
+        <!--Hobbies-->
+        <div class="two-col following-sect anchor" id="hobbies">
+            <div>
+                <h2>Hobbies</h2>
+            </div>
+            <div class="white-box">
+                Hobby 1
+            </div>
+            <div class="white-box">
+                Hobby 2
+            </div>
         </div>
     </div>
     

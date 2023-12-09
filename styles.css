@@ -9,93 +9,7 @@ body{
     width: 100%;
 }
 
-.two-col {
-    position: relative;
-}
-
-#headshot {
-    position: relative; /* Set position to absolute for image 1 */
-    top: 2rem;
-    left: 15rem;
-    z-index: 2; /* Set a higher z-index for headshot to bring it to the foreground */
-    width: 180px;
-    height: auto;
-}
-
-.white-box {
-    background-color: #ffffff;
-    margin-top: 5rem; margin-bottom: 5rem;
-    margin-left: 20rem; margin-right: 15rem;
-    padding-top: 1rem; padding-bottom: 1rem; 
-    padding-left: 6rem; padding-right: 2rem;
-    border: solid 0.05rem;
-    border-color: #9f9f9f;
-    border-radius: 1rem;
-    position: absolute; /* Set position to relative for image 2 */
-    top: 30px;
-    left: 30px;
-    z-index: 1;
-}
-
-/* "Responsive" presentation (start) */
-
-@media (max-width: 1010px) {
-    .white-box {
-        margin-left: 15rem; 
-        margin-right: 10rem;
-    }
-    #headshot {
-        top: 2rem;
-        left: 10rem;
-        width: 180px;
-        height: auto;
-    }
-}
-
-@media (max-width: 850px) {
-    .white-box {
-        margin-left: 10rem; 
-        margin-right: 5rem;
-    }
-    #headshot {
-        top: 2rem;
-        left: 5rem;
-        width: 180px;
-        height: auto;
-    }
-}
-
-@media (max-width: 690px) {
-    .white-box {
-        margin-left: 5rem; 
-        margin-right: 1rem;
-    }
-    #headshot {
-        top: 2rem;
-        left: 1rem;
-        width: 180px;
-        height: auto;
-    }
-}
-
-@media (max-width: 450px) {
-    .white-box {
-        margin-top: 5.5rem;
-        margin-left: 3rem; 
-        margin-right: 3rem;
-        padding: 1rem 2rem;
-    }
-    #headshot {
-        top: 1rem;
-        left: 2rem;
-        width: 130px;
-        height: auto;
-    }
-}
-
-/* "Responsive" presentation (end) */
-
-/* Navigation bar (start) */
+/*--- Navigation bar (start) ---*/
 
 header {
     background-color: #ffffff;
@@ -103,6 +17,8 @@ header {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    position: sticky; top: 0;
+    z-index: 999;
 }
 
 #name li, #name a {
@@ -186,14 +102,101 @@ nav li a:hover {
     header {
         flex-direction: row;
         align-items: center;
-        justify-content: center;
     }
     #name {
         margin-right: auto;
+        margin-left: 1.5rem;
     }
 }
 
 /* Responsive navigation bar (end) */
+
+.presentation {
+    position: relative;
+    display: block;
+}
+
+#headshot {
+    position: relative; 
+    top: 2rem;
+    left: 15rem;
+    z-index: 2; /* Set a higher z-index for headshot to bring it to the foreground */
+    width: 180px;
+    height: auto;
+}
+
+#pres-box {
+    background-color: #ffffff;
+    margin-top: 5rem; margin-bottom: 5rem;
+    margin-left: 20rem; margin-right: 15rem;
+    padding-top: 1rem; padding-bottom: 1rem; 
+    padding-left: 6rem; padding-right: 2rem;
+    border: solid 0.05rem;
+    border-color: #9f9f9f;
+    border-radius: 1rem;
+    position: absolute; 
+    top: 30px;
+    left: 30px;
+    z-index: 1;
+}
+
+/* "Responsive" presentation (start) */
+
+@media (max-width: 1010px) {
+    #pres-box {
+        margin-left: 15rem; 
+        margin-right: 10rem;
+    }
+    #headshot {
+        top: 2rem;
+        left: 10rem;
+        width: 180px;
+        height: auto;
+    }
+}
+
+@media (max-width: 850px) {
+    #pres-box {
+        margin-left: 10rem; 
+        margin-right: 5rem;
+    }
+    #headshot {
+        top: 2rem;
+        left: 5rem;
+        width: 180px;
+        height: auto;
+    }
+}
+
+@media (max-width: 690px) {
+    #pres-box {
+        margin-left: 5rem; 
+        margin-right: 1rem;
+    }
+    #headshot {
+        top: 2rem;
+        left: 1rem;
+        width: 180px;
+        height: auto;
+    }
+}
+
+@media (max-width: 450px) {
+    #pres-box {
+        margin-top: 5.5rem;
+        margin-left: 3rem; 
+        margin-right: 3rem;
+        padding: 1rem 2rem;
+    }
+    #headshot {
+        top: 1rem;
+        left: 2rem;
+        width: 130px;
+        height: auto;
+    }
+}
+
+/* "Responsive" presentation (end) */
 
 #my-title {
     font-size: 1.2rem;
@@ -202,4 +205,39 @@ nav li a:hover {
 #who-am-i {
     font-size: small;
     color: #737373;
+}
+
+
+/*--- Publications ---*/
+
+/* Two-columns layout */
+
+.two-col {
+    clear: both;
+    margin-left: 15rem; margin-right: 15rem;
+    margin-top: 10rem;
+}
+
+.white-box {
+    background-color: #ffffff;
+    /* margin-top: 5rem; margin-bottom: 5rem; */
+    margin-bottom: 1rem;
+    margin-left: 6.8rem; 
+    padding: 1.5rem;
+    /* padding-top: 1rem; padding-bottom: 1rem; 
+    padding-left: 6rem; padding-right: 2rem; */
+    border: solid 0.05rem;
+    border-color: #9f9f9f;
+    border-radius: 1rem;
+    top: 30px;
+    left: 30px;
+    z-index: 1;
+}
+
+.following-sect {
+    margin-top: 4rem;
+}
+
+.anchor { /*so that the navbar does not hide the title when accessing with the link in the navbar*/
+    scroll-margin-top: 140px;
 }
