@@ -9,6 +9,11 @@ body{
     width: 100%;
 }
 
+a {
+    color: inherit;
+    font-size: inherit;
+}
+
 /*--- Navigation bar (start) ---*/
 
 header {
@@ -204,11 +209,11 @@ nav li a:hover {
 
 #who-am-i {
     font-size: small;
-    color: #737373;
+    color: #4c4c53;
 }
 
 
-/*--- Publications ---*/
+/*--- Sections (start) ---*/
 
 /* Two-columns layout */
 
@@ -223,7 +228,8 @@ nav li a:hover {
     /* margin-top: 5rem; margin-bottom: 5rem; */
     margin-bottom: 1rem;
     margin-left: 6.8rem; 
-    padding: 1.5rem;
+    padding-left: 1.5rem; padding-right: 1.5rem;
+    padding-top: 0.3rem; padding-bottom: 0.3rem;
     /* padding-top: 1rem; padding-bottom: 1rem; 
     padding-left: 6rem; padding-right: 2rem; */
     border: solid 0.05rem;
@@ -241,3 +247,26 @@ nav li a:hover {
 .anchor { /*so that the navbar does not hide the title when accessing with the link in the navbar*/
     scroll-margin-top: 140px;
 }
+
+/*--- Blocks font style and size ---*/
+
+.institution {
+    font-size: small;
+    color: #4c4c53;
+}
+
+.details {
+    font-size: small;
+    color: #737373;
+}
+
+.description {
+    font-size: small;
+    color: #4c4c53;
+}
+
+.block-link {
+    text-decoration: none;
+}
+
+/*--- Sections (end) ---*/

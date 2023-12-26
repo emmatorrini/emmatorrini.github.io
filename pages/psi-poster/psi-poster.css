@@ -1,0 +1,141 @@
+body{
+    min-height: 100vh;
+    background-color: #f6f6f6;
+    color: #4c4c53;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 100%;
+}
+
+a {
+    color: #4c4c53;
+}
+
+/*--- Navigation bar (start) ---*/
+
+header {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: sticky; top: 0;
+    z-index: 999;
+}
+
+#name li, #name a {
+    font-family: "Poppins", sans-serif;
+    color: #4c4c53;
+    text-decoration: none;
+}
+
+#name {
+    list-style: none;
+    margin-bottom: -1.5rem;
+}
+
+#name:hover {
+    cursor: pointer;
+}
+
+nav li, nav a {
+    font-family: "Poppins", sans-serif;
+    color: #737373;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0rem 1.5rem;
+    color: #737373;
+    text-decoration: none;
+}
+
+nav li a {
+    transition: all 0.3s ease 0s;
+}
+
+nav li a:hover {
+    font-weight: bold;
+}
+
+/* Navigation bar (end) */
+
+/* Responsive navigation bar (start) */
+
+.side-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #ffffff;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.side-bar li {
+    width: 100%;
+}
+
+.side-bar a {
+    width: 100%;
+}
+
+.menu-button {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+    header {
+        flex-direction: row;
+        align-items: center;
+    }
+    #name {
+        margin-right: auto;
+        margin-left: 1.5rem;
+    }
+}
+
+/* Responsive navigation bar (end) */
+
+/* Text (start) */
+
+.text {
+    width: 50%;
+    margin: auto;
+}
+
+.authors {
+    color: #737373;
+}
+
+.authors > em {
+    font-size: small;
+}
+
+/* Text (end) */
+
+/* Image (start) */
+
+.image {
+    width: 100%;
+}
+
+/* Image (end) */

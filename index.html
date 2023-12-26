@@ -11,10 +11,12 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <!--Link to have FA4 icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Link to have Google icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 
-    <!--Navigation bar-->
+    <!--NAVIGATION BAR-->
     <header>
         <li id="name"><a href="#headshot" onclick=hideSidebar()><h2><strong>Emma Torrini</strong></h2></a></li>
         <nav>
@@ -23,8 +25,8 @@
                 <li onclick=hideSidebar()><a href="#"><i class="fa fa-remove"></i></a></li>
                 <li><a href="#experience" onclick=hideSidebar()>Experience</a></li>
                 <li><a href="#education" onclick=hideSidebar()>Education</a></li>
-                <li><a href="#projects" onclick=hideSidebar()>Projects</a></li>
                 <li><a href="#publications" onclick=hideSidebar()>Publications</a></li>
+                <li><a href="#projects" onclick=hideSidebar()>Projects</a></li>
                 <li><a href="#hobbies" onclick=hideSidebar()>Hobbies</a></li>
                 <li><a href="#" onclick=hideSidebar()>CV</a></li>
                 <li><a href="#" onclick=hideSidebar()>Contact</a></li>
@@ -33,8 +35,8 @@
             <ul>
                 <li class="hide-on-mobile"><a href="#experience">Experience</a></li>
                 <li class="hide-on-mobile"><a href="#education">Education</a></li>
-                <li class="hide-on-mobile"><a href="#projects">Projects</a></li>
                 <li class="hide-on-mobile"><a href="#publications">Publications</a></li>
+                <li class="hide-on-mobile"><a href="#projects">Projects</a></li>
                 <li class="hide-on-mobile"><a href="#hobbies">Hobbies</a></li>
                 <li class="hide-on-mobile"><a href="#">CV</a></li>
                 <li class="hide-on-mobile"><a href="#">Contact</a></li>
@@ -43,13 +45,14 @@
         </nav>
     </header>
 
+    <!---PRESENTATION-->
     <div>
         <!--Presentation-->
         <div class="presentation">
             <!--Photo (to add contacts see: notion > phd > projects > personal website > icons)-->
             <div>
                 <img id="headshot" class="anchor"
-                     src="images/headshot-outline.png" alt="Image">
+                     src="resources/headshot-outline.png" alt="Image">
             </div>
             <!--Presentation-->
             <div id="pres-box">
@@ -63,68 +66,224 @@
             </div>
         </div>
 
-        <!--Experience-->
+        <!--EXPERIENCE-->
         <div class="two-col anchor" id="experience">
             <div>
                 <h2>Experience</h2>
             </div>
+            <!--Phd Statistics-->
             <div class="white-box">
-                Experience 1
+                <p>
+                    <strong>PhD candidate in Statistics</strong> <br>
+                    <span class="institution">Università degli Studi di Firenze</span> <br>
+                    <span class="details">
+                        Nov 2023 - Today <br>
+                        <em>Florence, Italy</em>
+                    </span>
+                </p>
+                <p class="description">
+                    Research on the topic of causal inference for observational data in biostatistics, in collaboration with Daiichi Sankyo Europe GmbH.
+                </p>
             </div>
+            <!--ARTES-->
             <div class="white-box">
-                Experience 2
+                <p>
+                    <strong>Data Analyst for Statistical Report</strong> <br>
+                    <span class="institution">ARTES 4.0</span> <br>
+                    <span class="details">
+                        Mar 2023 - May 2023 <br>
+                        <em>Florence, Italy</em>
+                    </span>
+                </p>
+                <p class="description">
+                    Responsible for analyzing data coming from an online survey concerning companies' educational needs for environmental and digital transformations. Used R and Excel to prepare and analyze data, and wrote a statistical report that includes plots, tables, and models. Collaborated with ICStudio S.r.l. and the University of Florence. The report will be used to drive decisions about the educational offer on those topics.
+                </p>
+            </div>
+            <!--Boehringer-->
+            <div class="white-box">
+                <p>
+                    <strong>Biostatistics Intern</strong> <br>
+                    <span class="institution">Boehringer Ingelheim</span> <br>
+                    <span class="details">
+                        Aug 2022 - Nov 2022 <br>
+                        <em>Ingelheim am Rhein, Germany</em>
+                    </span>
+                </p>
+                <p class="description">
+                    Developed a statistical methodology to meet the needs of a clinical trial, and implemented it using R and Stan. The work resulted in my Master Thesis, which describes the methodology and applies it to a simulated dataset. Also contributed to an R library (<a href="https://cran.r-project.org/web/packages/tipmap/index.html" target="_blank">tipmap</a>) and gained experience in cleaning, exploring, and analyzing data from a clinical trial.
+                </p>
+            </div>
+            <!--Tutor Micro-->
+            <div class="white-box">
+                <p>
+                    <strong>Tutor of Microeconomics</strong> <br>
+                    <span class="institution">Università degli Studi di Firenze</span> <br>
+                    <span class="details">
+                        Jan 2021 - Dec 2021 <br>
+                        <em>Florence, Italy</em>
+                    </span>
+                </p>
+                <p class="description">
+                    Held weekly classes with 20 to 50 Bachelor students, teaching them how to solve exercises for the exam. Also offered individual lessons to address specific issues, and was responsible for scheduling and preparing the meetings.
+                </p>
             </div>
         </div>
 
-        <!--Education-->
+        <!--EDUCATION-->
         <div class="two-col following-sect anchor" id="education">
             <div>
                 <h2>Education</h2>
             </div>
+            <!--Magistrale-->
             <div class="white-box">
-                Education 1
+                <p>
+                    <strong>Master's degree in Statistics and Data Science</strong> <br>
+                    <span class="institution">Università degli Studi di Firenze</span> <br>
+                    <span class="details">
+                        Sep 2020 - Feb 2023 <br>
+                        <em>Final grade: 110/110 cum Laude</em>
+                    </span>
+                </p>
+                <p class="description">
+                    <ul class="description">
+                        <li>Thesis title: "A Bayesian approach to principal stratification with a time-to-event endpoint: implications of antidrug antibodies on treatment efficacy in immunology trials"</li>
+                        <li>Thesis supervisor: Prof. Fabrizia Mealli</li>
+                        <li>Thesis co-supervisor: Dr. Christian Stock</li>
+                        <li>Thesis subject: causal inference, principal stratification, Bayesian inference, drug development</li>
+                    </ul> 
+                </p>
             </div>
+            <!--Triennale-->
             <div class="white-box">
-                Education 2
-            </div>
-        </div>
-
-        <!--Projects-->
-        <div class="two-col following-sect anchor" id="projects">
-            <div>
-                <h2>Projects</h2>
-            </div>
-            <div class="white-box">
-                Projects 1
-            </div>
-            <div class="white-box">
-                Projects 2
+                <p>
+                    <strong>Bachelor's degree in Economics</strong> <br>
+                    <span class="institution">Università degli Studi di Firenze</span> <br>
+                    <span class="details">
+                        Sep 2017 - Oct 2020 <br>
+                        <em>Final grade: 110/110 cum Laude</em>
+                    </span>
+                </p>
+                <p class="description">
+                    <ul class="description">
+                        <li>Thesis title: "Auction theory: analysis of the German mechanism to encourage renewable energies"</li>
+                        <li>Thesis supervisor: Prof. Nicola Doni</li>
+                        <li>Thesis subject: microeconomics, policy evaluation review</li>
+                    </ul> 
+                </p>
             </div>
         </div>
     
-        <!--Publications-->
+        <!--PUBLICATIONS-->
         <div class="two-col following-sect anchor" id="publications">
             <div>
                 <h2>Publications</h2>
             </div>
-            <div class="white-box">
-                Publication 1
+            <!--ARTES report-->
+            <a class="block-link" href="pages/artes-fabbform/artes-fabbform.html">
+                <div class="white-box">
+                    <p>
+                        <strong>Indagine sui fabbisogni formativi delle imprese per la transizione ecologica e digitale</strong> <br>
+                        <span class="institution">
+                            Emma Torrini
+                        </span> <br>
+                        <span class="details">
+                            Edited by: ICStudio, DISIA (UniFi), DISEI (UniFi) <br>
+                            Funded by: ARTES 4.0 <br>
+                            <em>October 2023</em>
+                        </span>
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <!--PROJECTS-->
+        <div class="two-col following-sect anchor" id="projects">
+            <div>
+                <h2>Projects</h2>
             </div>
+            <!--R packages-->
             <div class="white-box">
-                Publication 2
+                <p>
+                    <strong>R packages</strong> <br> <br>
+                    <span class="description">
+                        CRAN-published R packages I co-authored or contributed to:
+                    </span>
+                    <ul class="description">
+                        <li>
+                            <a href="https://cran.r-project.org/web/packages/BPrinStratTTE/index.html" target="_blank"><strong>BPrinStratTTE</strong></a>: Causal Effects in Principal Strata Defined by Antidrug Antibodies
+                        </li>
+                        <li>
+                            <a href="https://cran.r-project.org/web/packages/tipmap/index.html" target="_blank"><strong>tipmap</strong></a>: Tipping Point Analysis for Bayesian Dynamic Borrowing
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            <!--Conference contributions-->
+            <div class="white-box">
+                <p>
+                    <strong>Conference contributions</strong> <br> <br>
+                    <span class="description">
+                        Posters and presentations delivered at conferences:
+                    </span>
+                    <ul class="description">
+                        <li>
+                            <a href="pages/psi-poster/psi-poster.html"><strong>A Bayesian approach to principal stratification for exponentially distributed time-to-event endpoints</strong></a> <br>
+                            <span class="details">
+                                Poster presented at PSI 2023, London (UK), 11-14 June 2023
+                            </span>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            <!--Personal website-->
+            <div class="white-box">
+                <p>
+                    <strong>Personal website</strong> <br> <br>
+                    <span class="description">
+                        I fully designed and coded from scratch the website you are visiting, using HTML, CSS, and a little bit of Java. <br> <br>
+                        With no previous experience with those programming languages, I was able to have the first version of this website up and running in [x] months. <br> <br>
+                        The website is hosted by GitHub Pages, and you can find the GitHub repository <a href="https://github.com/emmatorrini/emmatorrini.github.io" target="_blank">here</a>.
+                    </span>
+                </p>
             </div>
         </div>
 
-        <!--Hobbies-->
+        <!--HOBBIES-->
         <div class="two-col following-sect anchor" id="hobbies">
             <div>
                 <h2>Hobbies</h2>
             </div>
             <div class="white-box">
-                Hobby 1
+                <p>
+                    <strong><i class="fa fa-cut"></i> Knitting</strong> <br>
+                    <span class="description">
+                        Call me a grandma (my friends already do it anyway), but knitting is my idea of relax. For my fellow knitters, you can check my finished objects and more on my <a href="https://www.ravelry.com/people/emmatorrini">ravelry profile</a>.
+                    </span>
+                </p>
             </div>
             <div class="white-box">
-                Hobby 2
+                <p>
+                    <strong><i class="fa fa-map-signs"></i> Walking and hiking</strong> <br>
+                    <span class="description">
+                        Hiking or walking in general is my favourite way to move my body. Nothing is better than a good walk in the nature to soothe your mind and body.  
+                    </span>
+                </p>
+            </div>
+            <div class="white-box">
+                <p>
+                    <strong>Running</strong> <br>
+                    <span class="description">
+                        I hate running, and I think those who say they love it are blatantly lying (no, you can't change my mind). However, I keep doing it because I can't help but love the feeling of complete peace and relief that comes after it. 
+                    </span>
+                </p>
+            </div>
+            <div class="white-box">
+                <p>
+                    <strong><i class="fa fa-sort-numeric-asc"></i> Sudoku</strong> <br>
+                    <span class="description">
+                        There's nothing to say, it's just sudoku and I'm not even that good at it but I enjoy the challenge.  
+                    </span>
+                </p>
             </div>
         </div>
     </div>
