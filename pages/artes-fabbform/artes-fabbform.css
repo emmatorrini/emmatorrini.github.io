@@ -13,6 +13,8 @@ a {
     color: #4c4c53;
 }
 
+/*--- NAVIGATION BAR ---*/
+
 /*--- Navigation bar (start) ---*/
 
 header {
@@ -26,7 +28,7 @@ header {
 }
 
 #name li, #name a {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #4c4c53;
     text-decoration: none;
 }
@@ -49,6 +51,10 @@ nav li, nav a {
 nav ul {
     list-style: none;
 }
+
+ul#horizontal-bar .active {
+    font-weight: bold;
+} 
 
 nav li {
     display: inline-block;
@@ -74,7 +80,7 @@ nav li a:hover {
     top: 0;
     right: 0;
     height: 100vh;
-    width: 250px;
+    width: 200px;
     z-index: 999;
     background-color: #ffffff;
     display: none;
@@ -110,6 +116,7 @@ nav li a:hover {
     #name {
         margin-right: auto;
         margin-left: 1.5rem;
+        margin-bottom: 0rem;
     }
 }
 
@@ -118,7 +125,7 @@ nav li a:hover {
 /* Text (start) */
 
 .text {
-    width: 50%;
+    width: 65%;
     margin: auto;
 }
 
@@ -139,3 +146,14 @@ nav li a:hover {
 }
 
 /* Image (end) */
+
+
+/*------------------*/
+/*--- RESPONSIVE ---*/
+/*------------------*/
+
+@media (max-width: 1000px) {
+    .text{
+        width: 80%;
+    }
+}

@@ -14,6 +14,12 @@ a {
     font-size: inherit;
 }
 
+.acc-col { /* accent color */
+    color: #C44900;
+}
+
+/*--- NAVIGATION BAR ---*/
+
 /*--- Navigation bar (start) ---*/
 
 header {
@@ -27,7 +33,7 @@ header {
 }
 
 #name li, #name a {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #4c4c53;
     text-decoration: none;
 }
@@ -50,6 +56,10 @@ nav li, nav a {
 nav ul {
     list-style: none;
 }
+
+ul#horizontal-bar .active {
+    font-weight: bold;
+} 
 
 nav li {
     display: inline-block;
@@ -75,7 +85,7 @@ nav li a:hover {
     top: 0;
     right: 0;
     height: 100vh;
-    width: 250px;
+    width: 200px;
     z-index: 999;
     background-color: #ffffff;
     display: none;
@@ -111,10 +121,13 @@ nav li a:hover {
     #name {
         margin-right: auto;
         margin-left: 1.5rem;
+        margin-bottom: 0rem;
     }
 }
 
 /* Responsive navigation bar (end) */
+
+/*--- PRESENTATION ---*/
 
 .presentation {
     position: relative;
@@ -132,76 +145,20 @@ nav li a:hover {
 
 #pres-box {
     background-color: #ffffff;
-    margin-top: 5rem; margin-bottom: 5rem;
+    margin-top: -7rem; margin-bottom: 0rem;
     margin-left: 20rem; margin-right: 15rem;
+    /*margin-top: 5rem; margin-bottom: 5rem;
+    margin-left: 20rem; margin-right: 15rem;*/
     padding-top: 1rem; padding-bottom: 1rem; 
     padding-left: 6rem; padding-right: 2rem;
     border: solid 0.05rem;
     border-color: #9f9f9f;
     border-radius: 1rem;
-    position: absolute; 
-    top: 30px;
-    left: 30px;
+    position: relative; /********/
+    top: 2rem;
+    left: 2rem;
     z-index: 1;
 }
-
-/* "Responsive" presentation (start) */
-
-@media (max-width: 1010px) {
-    #pres-box {
-        margin-left: 15rem; 
-        margin-right: 10rem;
-    }
-    #headshot {
-        top: 2rem;
-        left: 10rem;
-        width: 180px;
-        height: auto;
-    }
-}
-
-@media (max-width: 850px) {
-    #pres-box {
-        margin-left: 10rem; 
-        margin-right: 5rem;
-    }
-    #headshot {
-        top: 2rem;
-        left: 5rem;
-        width: 180px;
-        height: auto;
-    }
-}
-
-@media (max-width: 690px) {
-    #pres-box {
-        margin-left: 5rem; 
-        margin-right: 1rem;
-    }
-    #headshot {
-        top: 2rem;
-        left: 1rem;
-        width: 180px;
-        height: auto;
-    }
-}
-
-@media (max-width: 450px) {
-    #pres-box {
-        margin-top: 5.5rem;
-        margin-left: 3rem; 
-        margin-right: 3rem;
-        padding: 1rem 2rem;
-    }
-    #headshot {
-        top: 1rem;
-        left: 2rem;
-        width: 130px;
-        height: auto;
-    }
-}
-
-/* "Responsive" presentation (end) */
 
 #my-title {
     font-size: 1.2rem;
@@ -213,42 +170,51 @@ nav li a:hover {
 }
 
 
-/*--- Sections (start) ---*/
+/*--- SECTIONS ---*/
 
 /* Two-columns layout */
 
 .two-col {
     clear: both;
     margin-left: 15rem; margin-right: 15rem;
-    margin-top: 10rem;
+    margin-top: 6rem;
 }
 
 .white-box {
     background-color: #ffffff;
-    /* margin-top: 5rem; margin-bottom: 5rem; */
     margin-bottom: 1rem;
-    margin-left: 6.8rem; 
+    margin-left: 5rem; margin-right: 0rem;
     padding-left: 1.5rem; padding-right: 1.5rem;
     padding-top: 0.3rem; padding-bottom: 0.3rem;
-    /* padding-top: 1rem; padding-bottom: 1rem; 
-    padding-left: 6rem; padding-right: 2rem; */
     border: solid 0.05rem;
     border-color: #9f9f9f;
     border-radius: 1rem;
-    top: 30px;
-    left: 30px;
+    top: 2rem;
+    left: 2rem;
     z-index: 1;
+    position: relative;
+}
+
+/* Images top right corner of the white box */
+.white-box img {
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    margin-bottom: inherit; margin-top: inherit;
+    margin-left: inherit; 
+    padding-left: inherit; padding-right: inherit;
+    padding-top: inherit; padding-bottom: inherit;
 }
 
 .following-sect {
-    margin-top: 4rem;
+    margin-top: 6rem;
 }
 
 .anchor { /*so that the navbar does not hide the title when accessing with the link in the navbar*/
     scroll-margin-top: 140px;
 }
 
-/*--- Blocks font style and size ---*/
+/* Blocks font style and size */
 
 .institution {
     font-size: small;
@@ -265,8 +231,124 @@ nav li a:hover {
     color: #4c4c53;
 }
 
-.block-link {
-    text-decoration: none;
+/*--- CONTACT ---*/
+
+#contact {
+    display: flex;
+    margin-top: 1rem; margin-bottom: 5rem;
+    justify-content: center;
 }
 
-/*--- Sections (end) ---*/
+#contact i { /* distance between contact icons and size */
+    margin: 0 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+/*------------------*/
+/*--- RESPONSIVE ---*/
+/*------------------*/
+
+/*--- PRESENTATION (responsive) ---*/
+
+/* Responsive presentation (start) */
+
+@media (max-width: 1050px) {
+    #pres-box {
+        margin-left: 15rem; 
+        margin-right: 10rem;
+    }
+    #headshot {
+        top: 2rem;
+        left: 10rem;
+        width: 180px;
+        height: auto;
+    }
+}
+
+@media (max-width: 880px) {
+    #pres-box {
+        margin-left: 10rem; 
+        margin-right: 5rem;
+    }
+    #headshot {
+        top: 2rem;
+        left: 5rem;
+        width: 180px;
+        height: auto;
+    }
+}
+
+@media (max-width: 730px) {
+    #pres-box {
+        margin-left: 5.7rem; 
+        margin-right: 3rem;
+    }
+    #headshot {
+        top: 2rem;
+        left: 1rem;
+        width: 180px;
+        height: auto;
+    }
+}
+
+@media (max-width: 475px) {
+    #pres-box {
+        margin-top: -3rem;
+        margin-left: 1rem; 
+        margin-right: 3rem;
+        padding: 1rem 2rem;
+    }
+    #headshot {
+        top: 1rem;
+        left: 2rem;
+        width: 130px;
+        height: auto;
+    }
+}
+
+/* Responsive presentation (end) */
+
+/*--- SECTIONS (responsive) ---*/
+
+/* Responsive sections (start) */
+
+@media (max-width: 1050px) {
+    .two-col {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+}
+
+@media (max-width: 880px) {
+    .two-col {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}
+
+@media (max-width: 730px) {
+    .two-col {
+        margin-left: 2rem;
+        margin-right: 3rem;
+    }
+    .white-box {
+        margin-left: 3.6rem;
+    }
+}
+
+@media (max-width: 475px) {
+    .two-col {
+        margin-left: 1rem;
+        margin-right: 3rem;
+    }
+    .white-box {
+        margin-left: 0rem;
+    }
+    .white-box > img { /*don't display the logo in the white box*/
+        display: none;
+    }
+}
+
+/* Responsive sections (end) */

@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="./styles.css">
     <!--Link to Poppins font-->
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <!--Link to have FA4 icons-->
+    <!--Link to FA4 icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--Link to have Google icons-->
+    <!--Link to FA6 icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--Link to Google icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
@@ -28,26 +30,25 @@
                 <li><a href="#publications" onclick=hideSidebar()>Publications</a></li>
                 <li><a href="#projects" onclick=hideSidebar()>Projects</a></li>
                 <li><a href="#hobbies" onclick=hideSidebar()>Hobbies</a></li>
-                <li><a href="#" onclick=hideSidebar()>CV</a></li>
-                <li><a href="#" onclick=hideSidebar()>Contact</a></li>
+                <li><a href="#cv" onclick=hideSidebar()>CV</a></li>
+                <li><a href="#contact" onclick=hideSidebar()>Contact</a></li>
             </ul>
             <!--Horizontal navbar (wider screens)-->
-            <ul>
+            <ul id="horizontal-bar">
                 <li class="hide-on-mobile"><a href="#experience">Experience</a></li>
                 <li class="hide-on-mobile"><a href="#education">Education</a></li>
                 <li class="hide-on-mobile"><a href="#publications">Publications</a></li>
                 <li class="hide-on-mobile"><a href="#projects">Projects</a></li>
                 <li class="hide-on-mobile"><a href="#hobbies">Hobbies</a></li>
-                <li class="hide-on-mobile"><a href="#">CV</a></li>
-                <li class="hide-on-mobile"><a href="#">Contact</a></li>
+                <li class="hide-on-mobile"><a href="#cv">CV</a></li>
+                <li class="hide-on-mobile"><a href="#contact">Contact</a></li>
                 <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa fa-navicon"></i></a></li>
             </ul>
         </nav>
     </header>
 
-    <!---PRESENTATION-->
     <div>
-        <!--Presentation-->
+        <!--PRESENTATION-->
         <div class="presentation">
             <!--Photo (to add contacts see: notion > phd > projects > personal website > icons)-->
             <div>
@@ -56,8 +57,8 @@
             </div>
             <!--Presentation-->
             <div id="pres-box">
-                <p id="my-title"><strong>PhD candidate in Statistics</strong> 
-                                 <i class="fa fa-graduation-cap"></i>
+                <p id="my-title"><strong> <i class="fa fa-graduation-cap acc-col"></i> 
+                    PhD candidate in Statistics</strong> 
                 </p>
                 <p id="who-am-i">
                     I am Emma, a first year PhD candidate in Statistics at the <em>University of Florence</em>. 
@@ -67,12 +68,13 @@
         </div>
 
         <!--EXPERIENCE-->
-        <div class="two-col anchor" id="experience">
+        <div class="two-col first-sect anchor" id="experience">
             <div>
                 <h2>Experience</h2>
             </div>
             <!--Phd Statistics-->
             <div class="white-box">
+                <img src="resources/unifi-daiichi-logo.png" alt="Logo UniFi and Daiichi Sankyo", width="105">
                 <p>
                     <strong>PhD candidate in Statistics</strong> <br>
                     <span class="institution">Università degli Studi di Firenze</span> <br>
@@ -87,6 +89,7 @@
             </div>
             <!--ARTES-->
             <div class="white-box">
+                <img src="resources/artes-logo.jpg" alt="Logo ARTES 4.0", width="45">
                 <p>
                     <strong>Data Analyst for Statistical Report</strong> <br>
                     <span class="institution">ARTES 4.0</span> <br>
@@ -101,6 +104,7 @@
             </div>
             <!--Boehringer-->
             <div class="white-box">
+                <img src="resources/bi-logo.jpg" alt="Logo Boehringer Ingelheim", width="45">
                 <p>
                     <strong>Biostatistics Intern</strong> <br>
                     <span class="institution">Boehringer Ingelheim</span> <br>
@@ -115,6 +119,7 @@
             </div>
             <!--Tutor Micro-->
             <div class="white-box">
+                <img src="resources/unifi-logo.jpg" alt="Logo UniFi", width="45">
                 <p>
                     <strong>Tutor of Microeconomics</strong> <br>
                     <span class="institution">Università degli Studi di Firenze</span> <br>
@@ -127,6 +132,36 @@
                     Held weekly classes with 20 to 50 Bachelor students, teaching them how to solve exercises for the exam. Also offered individual lessons to address specific issues, and was responsible for scheduling and preparing the meetings.
                 </p>
             </div>
+            <!--Opera La Pira-->
+            <div class="white-box">
+                <img src="resources/opera-logo.png" alt="Logo Opera La Pira", width="45">
+                <p>
+                    <strong>Volunteer group leader at summer camps</strong> <br>
+                    <span class="institution">Opera per la Gioventù Giorgio la Pira</span> <br>
+                    <span class="details">
+                        Jun 2016 - Aug 2019 <br>
+                        <em>Florence, Italy</em>
+                    </span>
+                </p>
+                <p class="description">
+                    Each summer I was responsible for a group of 10/20 teenagers, within a summer camp of 100+ people. Along with other group leaders, I organized the activities and took care of them during their 10-day stay.
+                </p>
+            </div>
+            <!--ACR-->
+            <div class="white-box">
+                <img src="resources/ac-logo.jpg" alt="Logo ACR", width="35">
+                <p>
+                    <strong>Volunteer ACR group leader</strong> <br>
+                    <span class="institution">Azione Cattolica Italiana</span> <br>
+                    <span class="details">
+                        Set 2014 - Jun 2019 <br>
+                        <em>Florence, Italy</em>
+                    </span>
+                </p>
+                <p class="description">
+                    Every Saturday afternoon I took care of a group of 10 children for 2 hours, playing with them and organizing some activities.
+                </p>
+            </div>
         </div>
 
         <!--EDUCATION-->
@@ -136,6 +171,7 @@
             </div>
             <!--Magistrale-->
             <div class="white-box">
+                <img src="resources/unifi-logo.jpg" alt="Logo UniFi", width="50">
                 <p>
                     <strong>Master's degree in Statistics and Data Science</strong> <br>
                     <span class="institution">Università degli Studi di Firenze</span> <br>
@@ -155,6 +191,7 @@
             </div>
             <!--Triennale-->
             <div class="white-box">
+                <img src="resources/unifi-logo.jpg" alt="Logo UniFi", width="50">
                 <p>
                     <strong>Bachelor's degree in Economics</strong> <br>
                     <span class="institution">Università degli Studi di Firenze</span> <br>
@@ -179,21 +216,21 @@
                 <h2>Publications</h2>
             </div>
             <!--ARTES report-->
-            <a class="block-link" href="pages/artes-fabbform/artes-fabbform.html">
-                <div class="white-box">
-                    <p>
+            <div class="white-box">
+                <p>
+                    <a href="pages/artes-fabbform/artes-fabbform.html">
                         <strong>Indagine sui fabbisogni formativi delle imprese per la transizione ecologica e digitale</strong> <br>
-                        <span class="institution">
-                            Emma Torrini
-                        </span> <br>
-                        <span class="details">
-                            Edited by: ICStudio, DISIA (UniFi), DISEI (UniFi) <br>
-                            Funded by: ARTES 4.0 <br>
-                            <em>October 2023</em>
-                        </span>
-                    </p>
-                </div>
-            </a>
+                    </a>
+                    <span class="institution">
+                        Emma Torrini
+                    </span> <br>
+                    <span class="details">
+                        Edited by: ICStudio, DISIA (UniFi), DISEI (UniFi) <br>
+                        Funded by: ARTES 4.0 <br>
+                        <em>October 2023</em>
+                    </span>
+                </p>
+            </div>
         </div>
 
         <!--PROJECTS-->
@@ -228,8 +265,12 @@
                     <ul class="description">
                         <li>
                             <a href="pages/psi-poster/psi-poster.html"><strong>A Bayesian approach to principal stratification for exponentially distributed time-to-event endpoints</strong></a> <br>
+                            <span class="institution">
+                                Emma Torrini, Benjamin Lang, Fabrizia Mealli, Christian Stock <br>
+                            </span>
                             <span class="details">
-                                Poster presented at PSI 2023, London (UK), 11-14 June 2023
+                                Poster presented at PSI 2023, London (UK) <br>
+                                <em>11-14 June 2023</em>
                             </span>
                         </li>
                     </ul>
@@ -240,8 +281,8 @@
                 <p>
                     <strong>Personal website</strong> <br> <br>
                     <span class="description">
-                        I fully designed and coded from scratch the website you are visiting, using HTML, CSS, and a little bit of Java. <br> <br>
-                        With no previous experience with those programming languages, I was able to have the first version of this website up and running in [x] months. <br> <br>
+                        I fully designed and coded from scratch the website you are visiting, using HTML, CSS, and a little bit of Java. 
+                        With no previous experience with those programming languages, I was able to have the first version of this website up and running in [x] months.
                         The website is hosted by GitHub Pages, and you can find the GitHub repository <a href="https://github.com/emmatorrini/emmatorrini.github.io" target="_blank">here</a>.
                     </span>
                 </p>
@@ -255,7 +296,7 @@
             </div>
             <div class="white-box">
                 <p>
-                    <strong><i class="fa fa-cut"></i> Knitting</strong> <br>
+                    <strong><i class="fa-solid fa-mitten acc-col"></i> Knitting</strong> <br>
                     <span class="description">
                         Call me a grandma (my friends already do it anyway), but knitting is my idea of relax. For my fellow knitters, you can check my finished objects and more on my <a href="https://www.ravelry.com/people/emmatorrini">ravelry profile</a>.
                     </span>
@@ -263,7 +304,7 @@
             </div>
             <div class="white-box">
                 <p>
-                    <strong><i class="fa fa-map-signs"></i> Walking and hiking</strong> <br>
+                    <strong><i class="fa fa-map-signs acc-col"></i> Walking and hiking</strong> <br>
                     <span class="description">
                         Hiking or walking in general is my favourite way to move my body. Nothing is better than a good walk in the nature to soothe your mind and body.  
                     </span>
@@ -271,31 +312,73 @@
             </div>
             <div class="white-box">
                 <p>
-                    <strong>Running</strong> <br>
+                    <strong><i class="fa-solid fa-person-running acc-col"></i> Running</strong> <br>
                     <span class="description">
-                        I hate running, and I think those who say they love it are blatantly lying (no, you can't change my mind). However, I keep doing it because I can't help but love the feeling of complete peace and relief that comes after it. 
+                        I hate running, but I love the feeling of complete peace and relief that comes after it. That's why I overall like doing it (I'm a statistician, I think on average).
                     </span>
                 </p>
             </div>
             <div class="white-box">
                 <p>
-                    <strong><i class="fa fa-sort-numeric-asc"></i> Sudoku</strong> <br>
+                    <strong><i class="fa fa-sort-numeric-asc acc-col"></i> Sudoku</strong> <br>
                     <span class="description">
                         There's nothing to say, it's just sudoku and I'm not even that good at it but I enjoy the challenge.  
                     </span>
                 </p>
             </div>
         </div>
+
+        <!--CV-->
+        <div class="two-col following-sect anchor" id="cv">
+            <div>
+                <h2>Curriculum Vitae</h2>
+            </div>
+            <div class="white-box">
+                <p>
+                    <span class="description">
+                        Want to know more? Download my CV! &nbsp
+                        <a href="resources/cv-english.pdf" download><i class="fa-solid fa-file-arrow-down acc-col"></i></a>
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <!--CONTACTS-->
+        <div>
+            <div class="following-sect two-col">
+                <hr>
+            </div>
+            <div id="contact">
+                <a href="https://www.linkedin.com/in/emmatorrini/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/emmatorrini" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <i id="copyEmail" class="fa-solid fa-envelope"></i>
+            </div>
+        </div>
     </div>
     
     <script>
+        /* Show the side bar */
         function showSidebar() {
             const sidebar = document.querySelector('.side-bar')
             sidebar.style.display = 'flex'
         }
+        /* Hide the side bar */
         function hideSidebar() {
             const sidebar = document.querySelector('.side-bar')
             sidebar.style.display = 'none'
+        }
+        /* Copy email address when clicking on the envelope */
+        document.getElementById('copyEmail').addEventListener('click', function () {
+            copyToClipboard('emma.torrini@unifi.it'); 
+            alert('Email address copied to clipboard!');
+        });
+        function copyToClipboard(text) {
+            var textarea = document.createElement('textarea');
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
         }
     </script>
 </body>
