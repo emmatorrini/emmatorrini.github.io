@@ -338,7 +338,13 @@ nav li a:hover {
     }
 }
 
-@media (max-width: 475px) {
+@media (max-width: 620px) { /*adjust margin so long title doesn't go under logo*/
+    .long-title {
+        margin-right: 10rem;
+    }
+}
+
+@media (max-width: 550px) {
     .two-col {
         margin-left: 1rem;
         margin-right: 3rem;
