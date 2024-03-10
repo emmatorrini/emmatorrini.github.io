@@ -13,6 +13,10 @@ a {
     color: #4c4c53;
 }
 
+html {
+    scroll-behavior: smooth;
+} 
+
 /*--- NAVIGATION BAR ---*/
 
 /*--- Navigation bar (start) ---*/

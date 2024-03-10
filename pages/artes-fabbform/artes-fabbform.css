@@ -14,6 +14,10 @@ a {
     font-size: inherit;
 }
 
+html {
+    scroll-behavior: smooth;
+} 
+
 /*--- NAVIGATION BAR ---*/
 
 /*--- Navigation bar (start) ---*/
