@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Page title-->
+    <title>Emma Torrini</title>
+    <!--Link to CSS file-->
+    <link rel="stylesheet" href="./psi-poster.css">
+    <!--Link to Poppins font-->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!--Link to have FA4 icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Link to FA6 icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--Link to Google icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <!--NAVIGATION BAR-->
+    <header>
+        <li id="name"><a href="../../#headshot" onclick=hideSidebar()><h2><strong>Emma Torrini</strong></h2></a></li>
+        <nav>
+            <!--Vertical navbar (smaller screens)-->
+            <ul class="side-bar">
+                <li onclick=hideSidebar()><a href="javascript:void(0)"><i class="fa fa-remove"></i></a></li>
+                <li><a href="../../#experience" onclick=hideSidebar()>Experience</a></li>
+                <li><a href="../../#education" onclick=hideSidebar()>Education</a></li>
+                <li><a href="../../#research" onclick=hideSidebar()>Research</a></li>
+                <li><a href="../../#hobbies" onclick=hideSidebar()>Hobbies</a></li>
+                <li><a href="../../#cv" onclick=hideSidebar()>CV</a></li>
+                <li><a href="#contact" onclick=hideSidebar()>Contact</a></li>
+            </ul>
+            <!--Horizontal navbar (wider screens)-->
+            <ul id="horizontal-bar">
+                <li class="hide-on-mobile"><a href="../../#experience">Experience</a></li>
+                <li class="hide-on-mobile"><a href="../../#education">Education</a></li>
+                <li class="hide-on-mobile"><a href="../../#research">Research</a></li>
+                <li class="hide-on-mobile"><a href="../../#hobbies">Hobbies</a></li>
+                <li class="hide-on-mobile"><a href="../../#cv">CV</a></li>
+                <li class="hide-on-mobile"><a href="#contact">Contact</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="javascript:void(0)"><i class="fa fa-navicon"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="text">
+        <h3>A Bayesian approach to principal stratification for exponentially distributed time-to-event endpoints</h3>
+        <p class="authors">
+            Emma Torrini, Benjamin Lang, Fabrizia Mealli, Christian Stock <br>
+            <em>PSI 2023 conference in London (UK), June 2023</em>
+        </p>
+        <img class="image"
+             src="poster_psi_A0_230516_DEF.jpg" alt="PSI 2023 poster image">
+        <p>
+            <strong>Abstract</strong> <br> <br>
+
+            Principal stratification has been proposed as one approach to deal with intercurrent 
+            events in the ICH E9 (R1) addendum (2019). However, so far, limited experience exists
+            with principal stratification in the context of clinical trials, especially with respect to
+            situations where interest is in a time-to-event endpoint. <br> <br>
+            
+            Our work is motivated by questions arising in the development of biological drugs in rare
+            immunological diseases, where patients under the investigational treatment may have an
+            immune response that leads to the development of antidrug antibodies (ADAs). If ADAs
+            occur, they can have a (negative) impact on the efficacy of the drug. It is thus commonly
+            an important secondary objective in phase II/III trials to explore the efficacy of the drug in
+            patients who develop ADAs. More precisely, it is of interest to estimate the effect of the
+            drug in the principal stratum of patients who would develop ADAs if given treatment. <br> <br>
+
+            We propose a basic Bayesian principal stratification approach for exponentially
+            distributed time-to-event endpoints that is applicable to the described setting. It allows
+            consideration of predictors of ADA development. We focus on the estimation of hazard
+            ratios and restricted mean survival times using Markov chain Monte Carlo methods. Our
+            simulation results show that the methodology can validly estimate the parameters of
+            interest. Given the typical sizes of phase II/III trials, the Bayesian approach may be
+            particularly advantageous since it allows use of prior information. <br> <br>
+
+            Overall, this work lays theoretical and practical foundations for desirable extensions,
+            including the use of flexible time-to-event distributions. <br> <br>
+            
+            <strong>Additional information</strong> <br> <br>
+
+            This poster was one of four to receive the award for best conference poster.
+        </p>
+    </div>
+
+    <!--CONTACTS-->
+    <div class="footer-container" id="contact">
+        <footer>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/emmatorrini/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/emmatorrini" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a><i id="copyEmail" class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="../../#experience">Experience</a></li>
+                    <li><a href="../../#education">Education</a></li>
+                    <li><a href="../../#research">Research</a></li>
+                    <li><a href="../../#hobbies">Hobbies</a></li>
+                    <li><a href="../../#cv">CV</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024, Emma Torrini</p>
+            </div>
+        </footer>
+    </div>
+    
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.side-bar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.side-bar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>
