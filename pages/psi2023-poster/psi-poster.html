@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Page title-->
     <title>Emma Torrini</title>
+    <!--Favicon (from https://formito.com/tools/favicon)-->
+    <link rel="icon" href="../../resources/favicon.png" type="image/png"/>
     <!--Link to CSS file-->
     <link rel="stylesheet" href="./psi-poster.css">
     <!--Link to Poppins font-->
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <!--Link to have FA4 icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--Link to Playfair Display font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <!--Link to FA6 icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!--Link to Google icons-->
@@ -20,7 +26,9 @@
 
     <!--NAVIGATION BAR-->
     <header>
-        <li id="name"><a href="../../#headshot" onclick=hideSidebar()><h2><strong>Emma Torrini</strong></h2></a></li>
+        <h2 id="name"><li><a href="../../#headshot" onclick=hideSidebar()>
+            Emma Torrini</a></li>
+        </h2>
         <nav>
             <!--Vertical navbar (smaller screens)-->
             <ul class="side-bar">
@@ -46,7 +54,7 @@
     </header>
 
     <div class="text">
-        <h3>A Bayesian approach to principal stratification for exponentially distributed time-to-event endpoints</h3>
+        <h3 class="poppins-semibold">A Bayesian approach to principal stratification for exponentially distributed time-to-event endpoints</h3>
         <p class="authors">
             Emma Torrini, Benjamin Lang, Fabrizia Mealli, Christian Stock <br>
             <em>PSI 2023 conference in London (UK), June 2023</em>
@@ -54,7 +62,7 @@
         <img class="image"
              src="poster_psi_A0_230516_DEF.jpg" alt="PSI 2023 poster image">
         <p>
-            <strong>Abstract</strong> <br> <br>
+            <span class="poppins-semibold">Abstract</span> <br> <br>
 
             Principal stratification has been proposed as one approach to deal with intercurrent 
             events in the ICH E9 (R1) addendum (2019). However, so far, limited experience exists
@@ -80,7 +88,7 @@
             Overall, this work lays theoretical and practical foundations for desirable extensions,
             including the use of flexible time-to-event distributions. <br> <br>
             
-            <strong>Additional information</strong> <br> <br>
+            <span class="poppins-semibold">Additional information</span> <br> <br>
 
             This poster was one of four to receive the award for best conference poster.
         </p>

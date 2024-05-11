@@ -1,7 +1,7 @@
 body{
     min-height: 100vh;
-    /* background-color: #f6f6f6; */
-    background-color: #f6f6f6;
+    background-color: #f4f2f2;
+    /*background-color: #f6f6f6;*/
     color: #4c4c53;
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -18,6 +18,12 @@ html {
     scroll-behavior: smooth;
 } 
 
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
 /*--- NAVIGATION BAR ---*/
 
 /*--- Navigation bar (start) ---*/
@@ -33,14 +39,18 @@ header {
 }
 
 #name li, #name a {
-    font-family: 'Poppins', sans-serif;
-    color: #4c4c53;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    font-size: 23pt;
+    font-style: italic;
+    /*color: #4c4c53;*/
+    color: #879A76;
     text-decoration: none;
 }
 
 #name {
     list-style: none;
-    margin-bottom: -1.5rem;
+    margin-bottom: 0rem;
 }
 
 #name:hover {
@@ -121,7 +131,7 @@ nav li a:hover {
     #name {
         margin-right: auto;
         margin-left: 1.5rem;
-        margin-bottom: 0rem;
+        margin-bottom: 1.5rem;
     }
 }
 

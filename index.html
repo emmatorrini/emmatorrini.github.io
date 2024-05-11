@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Page title-->
     <title>Emma Torrini</title>
+    <!--Favicon (from https://formito.com/tools/favicon)-->
+    <link rel="icon" href="./resources/favicon.png" type="image/png"/>
     <!--Link to CSS file-->
     <link rel="stylesheet" href="./styles.css">
     <!--Link to Poppins font-->
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--Link to Playfair Display font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <!--Link to FA4 icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Link to FA6 icons-->
@@ -20,7 +28,10 @@
 
     <!--NAVIGATION BAR-->
     <header>
-        <li id="name"><a href="#headshot" onclick=hideSidebar()><h2><strong>Emma Torrini</strong></h2></a></li>
+        <h2 id="name"><li><a href="#headshot" onclick=hideSidebar()>
+            Emma Torrini</a></li>
+        </h2>
+        <!--<li><a href="#headshot" onclick=hideSidebar()><h2 id="name">Emma Torrini</h2></a></li>-->
         <nav>
             <!--Vertical navbar (smaller screens)-->
             <ul class="side-bar">
@@ -55,8 +66,8 @@
             </div>
             <!--Presentation-->
             <div id="pres-box">
-                <p id="my-title"><strong> <i class="fa fa-graduation-cap acc-col"></i> 
-                    PhD candidate in Statistics</strong> 
+                <p id="my-title" class="poppins-semibold"><i class="fa fa-graduation-cap acc-col"></i> 
+                    PhD candidate in Statistics 
                 </p>
                 <p id="who-am-i">
                     I am Emma, a first year PhD candidate in Statistics at the <em>University of Florence</em>. 
@@ -68,13 +79,13 @@
         <!--EXPERIENCE-->
         <div class="two-col first-sect anchor" id="experience">
             <div>
-                <h2>Experience</h2>
+                <h2 class="poppins-semibold">Experience</h2>
             </div>
             <!--Phd Statistics and Tutor Statistics-->
             <div class="white-box">
                 <img src="resources/unifi-daiichi-logo.png" alt="Logo UniFi and Daiichi Sankyo", width="105">
                 <p>
-                    <strong>PhD candidate in Statistics</strong> <br>
+                    <span class="poppins-semibold">PhD candidate in Statistics</span> <br>
                     <span class="institution">Università degli Studi di Firenze</span> <br>
                     <span class="details">
                         Nov 2023 - Today <br>
@@ -85,7 +96,7 @@
                     Research on the topic of causal inference for observational data in biostatistics, in collaboration with Daiichi Sankyo Europe GmbH.
                 </p>
                 <p>
-                    <strong>Tutor of Statistics</strong> <br>
+                    <span class="poppins-semibold">Tutor of Statistics</span> <br>
                     <span class="institution">Università degli Studi di Firenze</span> <br>
                     <span class="details">
                         Mar 2024 - Today <br>
@@ -100,7 +111,7 @@
             <div class="white-box">
                 <img src="resources/artes-logo.jpg" alt="Logo ARTES 4.0", width="45">
                 <p>
-                    <strong>Data Analyst for Statistical Report</strong> <br>
+                    <span class="poppins-semibold">Data Analyst for Statistical Report</span> <br>
                     <span class="institution">ARTES 4.0</span> <br>
                     <span class="details">
                         Mar 2023 - May 2023 <br>
@@ -115,7 +126,7 @@
             <div class="white-box">
                 <img src="resources/bi-logo.jpg" alt="Logo Boehringer Ingelheim", width="45">
                 <p>
-                    <strong>Biostatistics Intern</strong> <br>
+                    <span class="poppins-semibold">Biostatistics Intern</span> <br>
                     <span class="institution">Boehringer Ingelheim</span> <br>
                     <span class="details">
                         Aug 2022 - Nov 2022 <br>
@@ -130,7 +141,7 @@
             <div class="white-box">
                 <img src="resources/unifi-logo.jpg" alt="Logo UniFi", width="45">
                 <p>
-                    <strong>Tutor of Microeconomics</strong> <br>
+                    <span class="poppins-semibold">Tutor of Microeconomics</span> <br>
                     <span class="institution">Università degli Studi di Firenze</span> <br>
                     <span class="details">
                         Jan 2021 - Dec 2021 <br>
@@ -145,7 +156,7 @@
             <div class="white-box">
                 <img src="resources/opera-logo.png" alt="Logo Opera La Pira", width="45">
                 <p>
-                    <strong class="long-title">Volunteer group leader at summer camps</strong> <br>
+                    <span class="long-title poppins-semibold">Volunteer group leader at summer camps</span> <br>
                     <span class="institution">Opera per la Gioventù Giorgio la Pira</span> <br>
                     <span class="details">
                         Jun 2016 - Aug 2019 <br>
@@ -160,7 +171,7 @@
             <div class="white-box">
                 <img src="resources/ac-logo.jpg" alt="Logo ACR", width="35">
                 <p>
-                    <strong>Volunteer ACR group leader</strong> <br>
+                    <span class="poppins-semibold">Volunteer ACR group leader</span> <br>
                     <span class="institution">Azione Cattolica Italiana</span> <br>
                     <span class="details">
                         Sep 2014 - Jun 2019 <br>
@@ -176,13 +187,13 @@
         <!--EDUCATION-->
         <div class="two-col following-sect anchor" id="education">
             <div>
-                <h2>Education</h2>
+                <h2 class="poppins-semibold">Education</h2>
             </div>
             <!--Magistrale-->
             <div class="white-box">
                 <img src="resources/unifi-logo.jpg" alt="Logo UniFi", width="50">
                 <p>
-                    <strong class="long-title">Master's degree in Statistics and Data Science</strong> <br>
+                    <span class="long-title poppins-semibold">Master's degree in Statistics and Data Science</span> <br>
                     <span class="institution">Università degli Studi di Firenze</span> <br>
                     <span class="details">
                         Sep 2020 - Feb 2023 <br>
@@ -202,7 +213,7 @@
             <div class="white-box">
                 <img src="resources/unifi-logo.jpg" alt="Logo UniFi", width="50">
                 <p>
-                    <strong>Bachelor's degree in Economics</strong> <br>
+                    <span class="poppins-semibold">Bachelor's degree in Economics</span> <br>
                     <span class="institution">Università degli Studi di Firenze</span> <br>
                     <span class="details">
                         Sep 2017 - Oct 2020 <br>
@@ -222,16 +233,16 @@
         <!--RESEARCH-->
         <div class="two-col following-sect anchor" id="research">
             <div>
-                <h2>Research</h2>
+                <h2 class="poppins-semibold">Research</h2>
             </div>
             <!--Publications-->
             <div class="white-box">
                 <p>
-                    <strong>Publications</strong> <br>
+                    <span class="poppins-semibold">Publications</span> <br>
                     <ul class="description">
                         <li>
-                            <a href="https://ics.it/report-dellindagine-sui-fabbisogni-formativi-per-la-transizione-ecologica-e-digitale-delle-imprese/?_gl=1*1vxgxuh*_ga*MTg4MDMwMTU0Ni4xNzAyMzA1Mzk5*_up*MQ">
-                                <strong>Indagine sui fabbisogni formativi delle imprese per la transizione ecologica e digitale</strong></a> <br>
+                            <a href="https://ics.it/report-dellindagine-sui-fabbisogni-formativi-per-la-transizione-ecologica-e-digitale-delle-imprese/?_gl=1*1vxgxuh*_ga*MTg4MDMwMTU0Ni4xNzAyMzA1Mzk5*_up*MQ" target="_blank">
+                                <span class="poppins-semibold">Indagine sui fabbisogni formativi delle imprese per la transizione ecologica e digitale</span></a> <br>
                             <span class="institution">
                                 Emma Torrini <br>
                             </span>
@@ -247,16 +258,16 @@
             <!--R packages-->
             <div class="white-box">
                 <p>
-                    <strong>R packages</strong> <br> <br>
+                    <span class="poppins-semibold">R packages</span> <br> <br>
                     <span class="description">
                         CRAN-published R packages I co-authored or contributed to:
                     </span>
                     <ul class="description">
                         <li>
-                            <a href="https://cran.r-project.org/web/packages/BPrinStratTTE/index.html" target="_blank"><strong>BPrinStratTTE</strong></a>: Causal Effects in Principal Strata Defined by Antidrug Antibodies
+                            <a href="https://cran.r-project.org/web/packages/BPrinStratTTE/index.html" target="_blank"><span class="poppins-semibold">BPrinStratTTE</span></a>: Causal Effects in Principal Strata Defined by Antidrug Antibodies
                         </li>
                         <li>
-                            <a href="https://cran.r-project.org/web/packages/tipmap/index.html" target="_blank"><strong>tipmap</strong></a>: Tipping Point Analysis for Bayesian Dynamic Borrowing
+                            <a href="https://cran.r-project.org/web/packages/tipmap/index.html" target="_blank"><span class="poppins-semibold">tipmap</span></a>: Tipping Point Analysis for Bayesian Dynamic Borrowing
                         </li>
                     </ul>
                 </p>
@@ -264,13 +275,13 @@
             <!--Conference contributions-->
             <div class="white-box">
                 <p>
-                    <strong>Conference contributions</strong> <br> <br>
+                    <span class="poppins-semibold">Conference contributions</span> <br> <br>
                     <span class="description">
                         Posters and presentations delivered at conferences:
                     </span>
                     <ul class="description">
                         <li>
-                            <a href="pages\eurocim2024-poster\eurocim2024-poster.html"><strong>Bayesian principal stratification for time-to-event endpoints: application to principal strata defined by the occurrence of antidrug antibodies</strong></a> <br>
+                            <a href="pages\eurocim2024-poster\eurocim2024-poster.html"><span class="poppins-semibold">Bayesian principal stratification for time-to-event endpoints: application to principal strata defined by the occurrence of antidrug antibodies</span></a> <br>
                             <span class="institution">
                                 Emma Torrini, Fabrizia Mealli, Christian Stock <br>
                             </span>
@@ -280,7 +291,7 @@
                             </span>
                         </li>
                         <li>
-                            <a href="pages/psi2023-poster/psi-poster.html"><strong>A Bayesian approach to principal stratification for exponentially distributed time-to-event endpoints *</strong></a> <br>
+                            <a href="pages/psi2023-poster/psi-poster.html"><span class="poppins-semibold">A Bayesian approach to principal stratification for exponentially distributed time-to-event endpoints *</span></a> <br>
                             <span class="institution">
                                 Emma Torrini, Benjamin Lang, Fabrizia Mealli, Christian Stock <br>
                             </span>
@@ -295,7 +306,7 @@
             <!--Personal website-->
             <div class="white-box">
                 <p>
-                    <strong>Personal website</strong> <br> <br>
+                    <span class="poppins-semibold">Personal website</span> <br> <br>
                     <span class="description">
                         I fully designed and coded from scratch the website you are visiting, using HTML, CSS, and a little bit of Java. 
                         With no previous experience with those programming languages, I was able to have the first version of this website up and running in 3 months, working on it as a side project during spare time.
@@ -308,19 +319,19 @@
         <!--HOBBIES-->
         <div class="two-col following-sect anchor" id="hobbies">
             <div>
-                <h2>Hobbies</h2>
+                <h2 class="poppins-semibold">Hobbies</h2>
             </div>
             <div class="white-box">
                 <p>
-                    <strong><i class="fa-solid fa-mitten acc-col"></i> Knitting</strong> <br>
+                    <span class="poppins-semibold"><i class="fa-solid fa-mitten acc-col"></i> Knitting</span> <br>
                     <span class="description">
-                        Call me a grandma (my friends already do it anyway), but knitting is my idea of relax. For my fellow knitters, you can check my finished objects and more on my <a href="https://www.ravelry.com/people/emmatorrini">ravelry profile</a>.
+                        Call me a grandma (my friends already do it anyway), but knitting is my idea of relax. For my fellow knitters, you can check my finished objects and more on my <a href="https://www.ravelry.com/people/emmatorrini" target="_blank">ravelry profile</a>.
                     </span>
                 </p>
             </div>
             <div class="white-box">
                 <p>
-                    <strong><i class="fa fa-map-signs acc-col"></i> Walking and hiking</strong> <br>
+                    <span class="poppins-semibold"><i class="fa fa-map-signs acc-col"></i> Walking and hiking</span> <br>
                     <span class="description">
                         Hiking or walking in general is my favourite way to move my body. Nothing is better than a good walk in the nature to soothe your mind and body.  
                     </span>
@@ -328,7 +339,7 @@
             </div>
             <div class="white-box">
                 <p>
-                    <strong><i class="fa-solid fa-person-running acc-col"></i> Running</strong> <br>
+                    <span class="poppins-semibold"><i class="fa-solid fa-person-running acc-col"></i> Running</span> <br>
                     <span class="description">
                         I hate running, but I love the feeling of complete peace and relief that comes after it. That's why I overall like doing it (I'm a statistician, I think on average).
                     </span>
@@ -336,7 +347,7 @@
             </div>
             <div class="white-box">
                 <p>
-                    <strong><i class="fa fa-sort-numeric-asc acc-col"></i> Sudoku</strong> <br>
+                    <span class="poppins-semibold"><i class="fa fa-sort-numeric-asc acc-col"></i> Sudoku</span> <br>
                     <span class="description">
                         There's nothing to say, it's just sudoku and I'm not even that good at it but I enjoy the challenge.  
                     </span>
@@ -347,7 +358,7 @@
         <!--CV-->
         <div class="two-col following-sect anchor" id="cv">
             <div>
-                <h2>Curriculum Vitae</h2>
+                <h2 class="poppins-semibold">Curriculum Vitae</h2>
             </div>
             <div class="white-box">
                 <p>
