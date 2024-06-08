@@ -14,6 +14,11 @@ a {
     color: #4c4c53;
 }
 
+a:hover {
+    color: #C298C5;
+    transition: 0.5s;
+}
+
 html {
     scroll-behavior: smooth;
 } 
@@ -22,6 +27,18 @@ html {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
+} 
+
+/* Override default color for text selection */
+
+::-moz-selection { /* Code for Firefox */
+    color: #ffffff;
+    background: #C298C5;
+}
+  
+::selection {
+    color: #ffffff;
+    background: #C298C5;
 }
 
 /*--- NAVIGATION BAR ---*/
@@ -84,6 +101,7 @@ nav li {
 
 nav li a:hover {
     opacity: 1;
+    color: #C298C5; /**************/
 }
 
 /* Navigation bar (end) */
@@ -197,12 +215,14 @@ footer {
 }
 
 .social-icons a:hover {
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
+    background-color: #C298C5; /************/
     transition: 0.5s;
 }
 
 .social-icons a:hover i {
-    color: #4c4c53;
+    /*color: #4c4c53;*/
+    color: #ffffff; /************/
     transition: 0.5s;
 }
 
@@ -222,12 +242,13 @@ footer {
     margin: 20px;
     text-decoration: none;
     color: #737373;
-    opacity: 0.7;
+    opacity: 0.8;
     transition: 0.5s;
 }
 
 .footer-nav ul li a:hover {
     opacity: 1;
+    color: #C298C5; /*************/
 }
 
 .footer-bottom {
