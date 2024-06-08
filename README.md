@@ -16,18 +16,16 @@ To silence all these thoughts, I did what I do best: watch YouTube videos. At fi
 
 I then learned that you can code a website using HTML, CSS, and occasionally Java, and host it on GitHub Pages. All of that is for free. The catch is that you need to be skilled at coding and be familiar with GitHub. Was I an expert in those three programming languages? Never seen them before. Was I able to use GitHub? Not really. Did I start the project anyways? For sure. 
 
-#### November 2023
-
 I created a folder in my computer with two blank files: `index.html` and `styles.css`. That's what everyone on YouTube was telling me to do. Also created a GitHub repository for the project. 
 
 I started coding something, while getting familiar with the two programming languages on the go. At every step, I was more and more amazed of how many beautiful designs and animations you can create with just two files and some lines of code. 
 
 I learned about navigation bars, footers, links, multiple pages, animations... and then responsiveness. That was a tricky part, but I hope I have handled it decently, and definitely learned a lot from it. I will never look at webpages the same way again after knowing what goes in building them.
 
-#### December 2023 - February2024
+#### November 2023
 
 The website was slowly continuing to grow and evolve. I could only use evenings or spare time to work on it, but every time I added a brick it was a learning opportunity and a pride after seeing the result. 
 
-#### March 2024
+#### December 2024
 
-The first version of the website is finished, and I finally found the courage to make it available on the internet. 
+The first version of the website is finished!
